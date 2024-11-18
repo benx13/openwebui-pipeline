@@ -52,6 +52,14 @@ class Pipeline:
     ) -> Union[str, Generator, Iterator]:
         # This is where you can add your custom pipelines like RAG.
         print(f"pipe:{__name__}")
+        print()
+        print()
+        print()
+        print(user_message)
+        print()
+        print()
+        print()
+        print(messages)
 
         response = test_chat_api(query=user_message)
 
