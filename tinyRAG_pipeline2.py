@@ -7,11 +7,12 @@ import requests
 import json
 
 
-def test_chat_api(query: str):
+def test_chat_api(query: str, fullz: dict):
     url = "http://172.17.0.1:5009/ask"
     
     payload = {
         "query": query,
+        "fullz": fullz,
     }
     headers = {'Content-Type': 'application/json'}
     response = requests.post(url, headers=headers, data=json.dumps(payload))
@@ -55,13 +56,12 @@ class Pipeline:
         print('xxxxxxxxxxxxxx')
         print()
         print()
-        print(body.get('messages'))
         print()
         print()
         print('xxxxxxxxxxxxxxxxxxxxxxxxxxx')
         print()
 
-        response = test_chat_api(query=user_message)
+        response = test_chat_api(query=user_message, fullz=body)
 
 
         def response_generator(response):
