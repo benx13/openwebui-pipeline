@@ -55,7 +55,7 @@ class Pipeline:
         print('xxxxxxxxxxxxxx')
         print()
         print()
-        #print(type(body))
+        print(body.get('messages'))
         print()
         print()
         print('xxxxxxxxxxxxxxxxxxxxxxxxxxx')
