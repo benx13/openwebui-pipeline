@@ -55,7 +55,7 @@ class Pipeline:
         print('xxxxxxxxxxxxxx')
         print()
         print()
-        print(type(body))
+        #print(type(body))
         print()
         print()
         print('xxxxxxxxxxxxxxxxxxxxxxxxxxx')
