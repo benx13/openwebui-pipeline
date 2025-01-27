@@ -8,7 +8,7 @@ import json
 
 
 def test_chat_api(query: str):
-    url = "http://host.docker.internal:5008/ask"
+    url = "http://172.17.0.1:5009/ask"
     
     payload = {
         "query": query,
