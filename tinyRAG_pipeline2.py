@@ -55,7 +55,7 @@ class Pipeline:
         print('xxxxxxxxxxxxxx')
         print()
         print()
-        print(body)
+        print(body['messages'][0]['content'][:15])
         print()
         print()
         print('xxxxxxxxxxxxxxxxxxxxxxxxxxx')
